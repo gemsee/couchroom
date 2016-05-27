@@ -1,0 +1,93 @@
+{
+	"id": "503998a3-b45f-35ef-52fe-7034a2dddc5f",
+	"name": "couchroom",
+	"description": "operations for the couchroom couchapp",
+	"order": [],
+	"folders": [
+		{
+			"id": "4b9a394a-2198-b059-0dcb-bb2c5422d20a",
+			"name": "Confirm read",
+			"description": "",
+			"order": [
+				"4a76bcb8-a5db-4ae2-2de8-b2ad52f1720c"
+			],
+			"owner": ""
+		},
+		{
+			"id": "327107c7-ab19-057a-a23d-9270590a20e6",
+			"name": "Send message",
+			"description": "",
+			"order": [
+				"19f09a59-f2d3-60b7-bd15-8f9d57a3eace",
+				"5483b719-faee-b492-0ea0-bfcf8bb05f8c"
+			],
+			"owner": ""
+		}
+	],
+	"timestamp": 1464362029685,
+	"owner": "",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "19f09a59-f2d3-60b7-bd15-8f9d57a3eace",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:5984/gchat_main/_design/couchroom/_update/send/?content=",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1464363896352,
+			"name": "http://localhost:5984/gchat_main/_design/gcchat/_update/send/?content=ahoj",
+			"description": "send message, append content to url",
+			"collectionId": "503998a3-b45f-35ef-52fe-7034a2dddc5f",
+			"responses": [],
+			"folder": "327107c7-ab19-057a-a23d-9270590a20e6"
+		},
+		{
+			"id": "4a76bcb8-a5db-4ae2-2de8-b2ad52f1720c",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:5984/gchat_main/_design/couchroom/_update/confirm_read/",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1464363873380,
+			"name": "http://localhost:5984/gchat_main/_design/couchroom/_update/confirm_read/",
+			"description": "send read confirmation (append message id to url)",
+			"collectionId": "503998a3-b45f-35ef-52fe-7034a2dddc5f",
+			"responses": [],
+			"folder": "4b9a394a-2198-b059-0dcb-bb2c5422d20a",
+			"rawModeData": ""
+		},
+		{
+			"id": "5483b719-faee-b492-0ea0-bfcf8bb05f8c",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:5984/gchat_main/_design/couchroom/_update/send",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1464364003703,
+			"name": "http://localhost:5984/gchat_main/_design/gcchat/_update/send/?content=ahoj",
+			"description": "send message, put content in raw body under the key \"content\"",
+			"collectionId": "503998a3-b45f-35ef-52fe-7034a2dddc5f",
+			"responses": [],
+			"rawModeData": "{\n    \"content\": \"\"\n}"
+		}
+	]
+}

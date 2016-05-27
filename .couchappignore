@@ -1,0 +1,6 @@
+[
+	".*~$",
+	".*\\.swp$",
+	".*\\.bak$",
+	"couchroom.postman_collection.json" // yes or no?
+]
